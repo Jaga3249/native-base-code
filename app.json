@@ -19,11 +19,59 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "fonts": [
+        {
+          "fontFamily": "Montserrat",
+          "fontDefinitions": [
+            {
+              "path": "./assets/fonts/Montserrat-Thin.ttf",
+              "weight": 100,
+              "style": "normal"
+            },
+            {
+              "path": "./assets/fonts/Montserrat-ExtraLight.ttf",
+              "weight": 200,
+              "style": "normal"
+            },
+            {
+              "path": "./assets/fonts/Montserrat-Light.ttf",
+              "weight": 300,
+              "style": "normal"
+            },
+            {
+              "path": "./assets/fonts/Montserrat-Regular.ttf",
+              "weight": 400,
+              "style": "normal"
+            },
+            {
+              "path": "./assets/fonts/Montserrat-Medium.ttf",
+              "weight": 500,
+              "style": "normal"
+            },
+            {
+              "path": "./assets/fonts/Montserrat-Bold.ttf",
+              "weight": 700,
+              "style": "normal"
+            },
+            {
+              "path": "./assets/fonts/Montserrat-ExtraBold.ttf",
+              "weight": 800,
+              "style": "normal"
+            },
+            {
+              "path": "./assets/fonts/Montserrat-Black.ttf",
+              "weight": 900,
+              "style": "normal"
+            }
+          ]
+        }
+      ]
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
     },
     "plugins": [
       "expo-router",
@@ -38,7 +86,8 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
